@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>variables</title>
+  </head>
+  <body>
+    
+    <button oncklick="
+    console.log('cart quality: ${cartQuantity }');
+    ">Schow quality
+  </button>
+
+    <button oncklick="
+    cartQuantity = cartQuantity + 1;
+    console.log('cart quality: ${cartQuantity} ');
+    "> Add to cart
+  </button>
+
+    <button oncklick="
+    cartQuantity = cartQuantity +2;
+    console.log('cart quality: ${cartQuantity}'); 
+    ">+2</button>
+
+    <button oncklick="
+    cartQuantity = cartQuantity + 3;
+    console.log('Cart was reset');
+    console.log(' card quality: ${cartQuantity}')
+    ">+3</button>
+
+    <button oncklick="
+    cartQuantity = 0;
+    console.log('Cart was resent: ${cartQuantity}');d
+    ">Reset cart</button>
+    <script>
+       let cartQuantity = 0;
+       console.log(cartQuantity);
+      
+    </script>
+  </body> 
+</html>  

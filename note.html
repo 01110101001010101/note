@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      
+      <script>
+       // Створюємо елементи
+const container = document.body;  // або будь-який інший контейнер
+const input = document.createElement("input");
+input.type = "text";
+input.placeholder = "Введіть текст";
+
+const button = document.createElement("button");
+button.textContent = "Отримати текст";
+button.onclick = function() {
+  alert("Ви ввели: " + input.value);
+};
+
+// Додаємо їх на сторінку
+container.appendChild(input);
+container.appendChild(button);
+      </script>
+    </body>
+  </head>
+</html>
